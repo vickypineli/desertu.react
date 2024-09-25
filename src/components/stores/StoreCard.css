@@ -1,0 +1,10 @@
+/* src/components/stores/StoreCard.css */
+.card {
+    width: 100%; /* Asegura que la tarjeta ocupe el 100% del ancho */
+  }
+  
+  .card-img-top {
+    height: 200px; /* Ajusta la altura de la imagen */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+  }
+  
