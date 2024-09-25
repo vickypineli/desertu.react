@@ -1,0 +1,8 @@
+/* src/components/header/Header.css */
+.header {
+    background-color: #007bff; /* Color de fondo del encabezado */
+    color: white; /* Color del texto */
+    padding: 1rem; /* Espaciado */
+    text-align: center; /* Alinear texto al centro */
+  }
+  
