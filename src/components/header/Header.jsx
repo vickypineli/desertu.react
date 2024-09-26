@@ -1,45 +1,60 @@
 // src/components/header/Header.jsx
-// import React from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Header.css'; // Importa los estilos del componente
+import './Header.css'; // Asegúrate de importar tus estilos
 
-function Header() {
+const Header = () => {
+  const [isOpen, setIsOpen] = useState(false); // Estado para manejar la visibilidad del menú
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen); // Cambiar el estado de apertura/cierre del menú
+  };
+
   return (
-    <header className="header">
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <div className="container">
-          <Link className="navbar-brand" to="/">Desertu Berria</Link>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav ms-auto"> {/* Alinea los enlaces a la derecha */}
-              <li className="nav-item">
-                <Link className="nav-link" to="/">Inicio</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/about">Conocenos</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/events">Eventos</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/contact">Contacto</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/documents">Documentos</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/stores">Tiendas</Link>
-              </li>
-
-            </ul>
-          </div>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <div className="container-fluid">
+        <Link className="navbar-brand" to="/">Desertu Berria</Link>
+        {/* Botón de hamburguesa con transformación */}
+        <button
+          className={`navbar-toggler ${isOpen ? 'open' : ''}`}
+          type="button"
+          onClick={toggleMenu}
+          aria-controls="navbarNav"
+          aria-expanded={isOpen}
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        {/* Menú con animación de deslizamiento */}
+        <div className={`navbar-collapse sliding-menu ${isOpen ? 'show' : ''}`} id="navbarNav">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <Link className="nav-link" to="/">Inicio</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/about">Sobre Nosotros</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/events">Eventos</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/stores">Tiendas</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/contact">Contacto</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/documents">Documentos</Link>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
   );
-}
+};
 
 export default Header;
+
+
+
 
