@@ -3,6 +3,7 @@
   position: relative;
   z-index: 1000;
   width: 100%; /* Asegurar que ocupe todo el ancho */
+
 }
 
 /* Eliminar borde y contorno del botón */
@@ -15,7 +16,7 @@
   height: 24px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex;
   padding: 0;
   background-color: trnsparent; /* Evitar fondo predeterminado */
   /* background-color: none; */
@@ -113,6 +114,15 @@
 
 /* Evitar el deslizamiento en pantallas más grandes */
 @media (min-width: 992px) {
+  .navbar-brand {
+    margin-right: auto; /* Alinear navbar-brand a la izquierda */
+  }
+  .navbar-nav {
+    margin-left: auto; /* Alinear elementos del nav a la derecha */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
   .sliding-menu {
     max-height: none; /* Mostrar menú en pantallas grandes */
     overflow: visible;
