@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/">Desertu Berria</Link>
+        <Link className="navbar-brand me-auto" to="/">Desertu Berria</Link>
         {/* Botón de hamburguesa con transformación */}
         <button
           className={`navbar-toggler ${isOpen ? 'open' : ''}`}
@@ -27,7 +27,7 @@ const Header = () => {
         </button>
         {/* Menú con animación de deslizamiento */}
         <div className={`navbar-collapse sliding-menu ${isOpen ? 'show' : ''}`} id="navbarNav">
-          <ul className="navbar-nav">
+        <ul className="navbar-nav ms-auto"> {/* Alinear los elementos del nav a la derecha */}
             <li className="nav-item">
               <Link className="nav-link" to="/">Inicio</Link>
             </li>

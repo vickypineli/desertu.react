@@ -1,0 +1,82 @@
+/* Carrusel */
+.carousel {
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.carousel-item {
+    height: 80vh;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover; /* Ajustar la imagen sin perder proporción */
+}
+.carousel-title {
+    font-size: 8rem;
+    font-weight: bold;
+    color: #f0f0f0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.87); /* Sombra para hacer el texto más visible */
+    margin-bottom: 15px;
+}
+.carousel-subtitle1 {
+    font-size: 4rem;
+    font-weight: 400;
+    color: #f0f0f0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.87);
+}
+
+.carousel-subtitle2 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #f0f0f0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.87);
+}
+
+/* Textos superpuestos sobre el carrusel */
+.carousel-text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 10;
+    padding: 20px;
+}
+
+.show {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.hide {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Estilos de los textos interactivos */
+.interactive-text1, .interactive-text2 {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to top, rgba(17, 17, 17, 0.507), rgba(13, 85, 167, 0)); /* Degradado de abajo hacia arriba */
+}
+
+/* Ajustes responsive para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .carousel-title {
+        font-size: 3rem;
+    }
+    .carousel-subtitle1 {
+        font-size: 2rem;
+    }
+    .carousel-subtitle2 {
+        font-size: 1rem;
+    }
+}
+
