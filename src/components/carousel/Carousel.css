@@ -64,16 +64,36 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: linear-gradient(to top, rgba(17, 17, 17, 0.507), rgba(13, 85, 167, 0)); /* Degradado de abajo hacia arriba */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to top, rgba(17, 17, 17, 0.13), rgba(17, 17, 17, 0.507), rgba(13, 85, 167, 0)); /* Degradado de abajo hacia arriba */
 }
 
 /* Ajustes responsive para pantallas más pequeñas */
 @media (max-width: 768px) {
+    .interactive-text1, .interactive-text2 {
+        height: 30vh;
+    }
     .carousel-title {
         font-size: 3rem;
     }
     .carousel-subtitle1 {
         font-size: 2rem;
+    }
+    .carousel-subtitle2 {
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 576px) {
+    .interactive-text1, .interactive-text2 {
+        height: 20vh;
+    }
+    .carousel-title {
+        font-size: 2rem;
+    }
+    .carousel-subtitle1 {
+        font-size: 1.5rem;
     }
     .carousel-subtitle2 {
         font-size: 1rem;
