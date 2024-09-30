@@ -1,4 +1,3 @@
-// src/components/header/Header.jsx
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css'; // Asegúrate de importar tus estilos
@@ -14,7 +13,7 @@ const Header = () => {
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
         <Link className="navbar-brand me-auto" to="/">Desertu Berria</Link>
-        {/* Botón de hamburguesa con transformación */}
+        {/* Botón de hamburguesa */}
         <button
           className={`navbar-toggler ${isOpen ? 'open' : ''}`}
           type="button"
@@ -27,9 +26,9 @@ const Header = () => {
         </button>
         {/* Menú con animación de deslizamiento */}
         <div className={`navbar-collapse sliding-menu ${isOpen ? 'show' : ''}`} id="navbarNav">
-        <ul className="navbar-nav ms-auto"> {/* Alinear los elementos del nav a la derecha */}
+          <ul className="navbar-nav ms-auto"> {/* Alinear los elementos del nav a la derecha */}
             <li className="nav-item">
-              <Link className="nav-link" to="/">Inicio</Link>
+              <Link className="nav-link active" to="/">Inicio</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/about">Sobre Nosotros</Link>
@@ -50,6 +49,7 @@ const Header = () => {
         </div>
       </div>
     </nav>
+    
   );
 };
 

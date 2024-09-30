@@ -12,7 +12,7 @@ const Carousel = () => {
   };
 
   return (
-    <div id="carouselExample" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <div id="carouselExample" className="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
       <div className="carousel-inner">
         <div className="carousel-item active">
           <img src="/assets/plaza-pormetxeta1.jpg" className="d-block w-100" alt="Plaza PORmetxeta" />
@@ -23,6 +23,10 @@ const Carousel = () => {
         <div className="carousel-item">
           <img src="/assets/desertu berria0.jpg" className="d-block w-100" alt="Barrio Desierto" />
         </div>
+        <div className="carousel-item">
+          <img src="/assets/plaza-desierto1.png" className="d-block w-100" alt="Barrio Desierto" />
+        </div>
+
       </div>
 
       {/* Textos superpuestos */}

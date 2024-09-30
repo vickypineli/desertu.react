@@ -1,115 +1,28 @@
 /* Estilos generales del navbar */
-.navbar {
-  position: relative;
-  z-index: 1000;
-  width: 100%; /* Asegurar que ocupe todo el ancho */
-
-}
-
-/* Eliminar borde y contorno del botón */
-.navbar-toggler {
-  border: none;
-  outline: none;
-  cursor: pointer;
-  position: relative;
-  width: 30px;
-  height: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: flex;
-  padding: 0;
-  background-color: trnsparent; /* Evitar fondo predeterminado */
-  /* background-color: none; */
-}
-
-/* Evitar el borde o la sombra cuando se hace clic */
-.navbar-toggler:focus, 
-.navbar-toggler:active, 
-.navbar-toggler:focus-visible {
-  outline: none;
-  box-shadow: none; /* Eliminar cualquier sombra o borde */
-}
-
-/* Líneas del icono de hamburguesa */
-.navbar-toggler-icon {
-  width: 30px;
-  height: 4px;
-  background-color: #000;
-  position: relative;
-  transition: all 0.3s ease;
-}
-
-/* Líneas superior e inferior (pseudo-elementos) */
-.navbar-toggler-icon::before,
-.navbar-toggler-icon::after {
-  content: '';
-  width: 30px;
-  height: 4px;
-  background-color: #000;
-  position: absolute;
-  left: 0;
-  transition: all 0.3s ease;
-}
-
-/* Posicionar las líneas superior e inferior */
-.navbar-toggler-icon::before {
-  top: -8px;
-  
-
-}
-
-.navbar-toggler-icon::after {
-  top: 8px;
-}
-
-/* Transición a "X" cuando se hace clic en el menú */
-.navbar-toggler.open .navbar-toggler-icon {
-  background-color: transparent; /* Ocultar la línea central */
-  background-size: 0; /* Ocultar la línea central */
-
-}
-
-.navbar-toggler.open .navbar-toggler-icon::before {
-  transform: rotate(45deg);
-  top: 0;
-}
-
-.navbar-toggler.open .navbar-toggler-icon::after {
-  transform: rotate(-45deg);
-  top: 0;
-}
 
 /* Menú desplegable */
 .sliding-menu {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease-in-out; /* Suave deslizamiento */
+  transition: max-height 1.0s ease-in-out; /* Suave deslizamiento */
 }
 
 .sliding-menu.show {
   max-height: 500px; /* Ajusta este valor según el tamaño del menú */
+  transition: max-height 1.0s ease-in-out;
 }
 
 /* Estilos de los elementos dentro del menú */
 .navbar-nav {
-  padding-left: 0;
-  margin-bottom: 0;
   list-style: none;
   text-align: center; /* Centrar los enlaces en pantallas pequeñas */
 }
 
 .nav-item {
-  margin: 10px 0; /* Añadir espacio entre los enlaces */
+  margin: 5px 0; /* Añadir espacio entre los enlaces */
 }
-
-.nav-link {
-  color: #000;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.nav-link:hover {
-  color: #555; /* Cambiar el color cuando el cursor pase por encima */
+.navbar-toggler {
+  border: none;
 }
 
 /* Evitar el deslizamiento en pantallas más grandes */
@@ -141,7 +54,4 @@
     color: #000;
   }
 
-  .nav-link:hover {
-    color: #555;
-  }
 }
