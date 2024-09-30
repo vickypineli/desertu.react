@@ -4,6 +4,7 @@
 import Carousel from '../carousel/Carousel';
 import './Home.css';
 import AboutBox from '../aboutBox/AboutBox';
+import ContactSection from '../contactSection/ContactSection';
 
 function Home() {
   return (
@@ -25,7 +26,9 @@ function Home() {
             <p>Ponte en contacto con nosotros para más información.</p>
           </div>
         </div>
+
       </div>
+      <ContactSection />
     </>
     
   );

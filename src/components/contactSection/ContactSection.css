@@ -1,0 +1,34 @@
+/* src/components/ContactSection.css */
+
+.contact-section {
+    background-color: #f8f9fa; /* Color de fondo claro */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para resaltar la sección */
+  }
+  
+  .contact-section-image img {
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+  }
+  
+  .contact-section-content {
+    text-align: center; /* Alinear el texto a la izquierda */
+  }
+  
+  .contact-section h2 {
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .contact-section p {
+    margin-bottom: 20px;
+  }
+  
+  .contact-section .btn-primary {
+    background-color: #0d55a7; /* Color personalizado del botón */
+    border: none;
+  }
+  
+  .contact-section .btn-primary:hover {
+    background-color: #0b4792; /* Color más oscuro en hover */
+  }
+  
