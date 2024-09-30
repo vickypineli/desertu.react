@@ -3,11 +3,13 @@
 
 import Carousel from '../carousel/Carousel';
 import './Home.css';
+import AboutBox from '../aboutBox/AboutBox';
 
 function Home() {
   return (
     <>
       <Carousel />
+      <AboutBox />
       <div className="container-fluid">
         <div className="row text-center">
           <div className="col-md-4 mb-4">

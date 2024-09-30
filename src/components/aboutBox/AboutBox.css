@@ -1,0 +1,34 @@
+/* src/components/AboutBox.css */
+.about-box {
+    background: #f8f9fa; /* Fondo claro */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto de profundidad */
+  }
+  
+  .about-box-image img {
+    border-radius: 8px;
+  }
+  
+  .about-box-content {
+    padding: 20px;
+  }
+  
+  .about-box-content h2 {
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .about-box-content p {
+    margin-bottom: 20px;
+    color: #555; /* Color gris para el texto */
+  }
+  
+  .about-box-content .btn-primary {
+    background-color: #0d55a7; /* Personalización del color del botón */
+    border: none;
+  }
+  
+  .about-box-content .btn-primary:hover {
+    background-color: #0a3e7c; /* Color cuando se pasa el ratón por encima */
+  }
+  

@@ -21,9 +21,7 @@
 .nav-item {
   margin: 5px 0; /* Añadir espacio entre los enlaces */
 }
-.navbar-toggler {
-  border: none;
-}
+
 
 /* Evitar el deslizamiento en pantallas más grandes */
 @media (min-width: 992px) {
