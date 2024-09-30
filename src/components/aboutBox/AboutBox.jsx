@@ -23,6 +23,7 @@ const AboutBox = () => {
             Somos una asociación de vecinos y vecinas que estamos en el barrio de Barakaldo. 
             A pesar de que somos un barrio de reciente construcción, el Barrio del Desierto 
             fue fundado hace años...
+            Conoce cómo es nuestro barrio, su historia y cómo hemos crecido a lo largo de los años.
           </p>
           <Link to="/about">
             <button className="btn btn-primary">Leer más</button>
