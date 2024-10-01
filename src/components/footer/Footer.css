@@ -1,19 +1,22 @@
 /* src/components/footer/Footer.css */
 .footer {
     padding: 20px 0; /* Espaciado superior e inferior */
-    background-color: #f8f9fa; /* Color de fondo */
+    background-color: #0d55a7; /* Color de fondo */
+    color : #fff;
   }
   
   .footer h5 {
     margin-bottom: 15px; /* Espacio inferior para los encabezados */
+    font-weight: bold;
   }
   
   .footer p {
-    margin: 0; /* Elimina margen en párrafos */
+    margin: 10px 0; /* Elimina margen en párrafos */
+    color: #ffffffbe;
   }
   
   .footer a {
-    color: #007bff; /* Color de los enlaces */
+    color: #ffffffbe; /* Color de los enlaces */
     text-decoration: none; /* Elimina subrayado */
     padding: 3px;
   }

@@ -5,7 +5,7 @@ import './AboutBox.css';
 
 const AboutBox = () => {
   return (
-    <Container className="about-box my-4 p-4">
+    <Container className="about-box my-5 p-4">
       <Row className="align-items-center">
         {/* Caja izquierda: Imagen */}
         <Col md={6} className="about-box-image">

@@ -1,8 +1,9 @@
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { FaStore, FaBeer, FaUsers } from 'react-icons/fa';
-
+import { FaStore, FaUsers } from 'react-icons/fa';
+import { LuPartyPopper } from "react-icons/lu";
 import './InfoSection.css';
+
 
 const InfoSection = () => {
     return (
@@ -11,7 +12,7 @@ const InfoSection = () => {
         {/* Primera caja: El Barrio */}
         <Col md={3} className="info-box mx-3">
           <div className="info-icon">
-            <FaStore size={50} />
+            <FaStore size={100} />
           </div>
           <h3>Compra en el Barrio</h3>
           <p>Conoce todas las tiendas que hay en el barrio sus horarios, servicios y ubicación.</p>
@@ -23,9 +24,9 @@ const InfoSection = () => {
         {/* Segunda caja: Nuestras Fiestas */}
         <Col md={3} className="info-box mx-3">
           <div className="info-icon">
-            <FaBeer size={50} />
+            <LuPartyPopper  size={100} />
           </div>
-          <h3>Nuestras Fiestas</h3>
+          <p>Nuestras Fiestas</p>
           <p>Descubre las festividades que organizamos para mantener viva la alegría y la tradición en nuestro barrio.</p>
           <Link to="/about-fiestas">
             <Button variant="primary">Leer más</Button>
@@ -35,7 +36,7 @@ const InfoSection = () => {
         {/* Tercera caja: Cómo Nos Organizamos */}
         <Col md={3} className="info-box mx-3">
           <div className="info-icon">
-            <FaUsers size={50} />
+            <FaUsers size={100} />
           </div>
           <h3>Cómo Nos Organizamos</h3>
           <p>Infórmate sobre cómo se estructura nuestra asociación y cómo nos organizamos para mejorar nuestro barrio.</p>

@@ -1,0 +1,47 @@
+/* src/components/GrowingSection.css */
+
+.growing-section {
+    background-image: url('/assets/desertu berria3.jpg'); /* Ruta a tu imagen de fondo */
+    background-size: cover; /* Ajustar la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centramos la imagen */
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+    color: white; /* Color blanco para que el texto contraste mejor con el fondo */
+  }
+  .title-section {
+    padding: 20px;
+  }
+  .growing-section h2 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 60px auto 20px auto;
+   
+  }
+  .growing-section p {
+    margin-bottom: 20px;
+    padding: 0 20px;
+    color: white;
+    text-align: justify;
+  } 
+
+  .growing-box {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .growing-box h3 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    
+  }
+  
+  .growing-box p {
+    margin-bottom: 20px;
+  } 
+  
+  .count {
+    font-size: 6.5rem; /* Tamaño grande para los números */
+    font-weight: bold;
+    color: rgba(228, 228, 51, 0.856);
+  }
+  

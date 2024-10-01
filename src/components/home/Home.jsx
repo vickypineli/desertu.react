@@ -5,6 +5,7 @@ import AboutBox from '../aboutBox/AboutBox';
 import ContactSection from '../contactSection/ContactSection';
 import './Home.css';
 import InfoSection from '../infoSection/InfoSection';
+import GrowingSection from '../growingSection/GrowingSection';
 
 
 function Home() {
@@ -12,6 +13,7 @@ function Home() {
     <>
       <Carousel />
       <AboutBox />
+      <GrowingSection />
       <InfoSection />
       <ContactSection />
     </>

@@ -4,7 +4,7 @@ import './Footer.css'; // Importa los estilos del componente
 
 function Footer() {
   return (
-    <footer className="footer bg-light">
+    <footer className="footer bg-primary">
       <div className="container-fluid">
         <div className="row text-center">
           {/* <div className="col-md-4 text-center text-md-start">
