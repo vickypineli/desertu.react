@@ -42,7 +42,7 @@
   color: #0a3e7c;
 }
 
-Animaciones para las columnas
+/*Animaciones para las columnas*/
 
 .animate-from-right {
   opacity: 0; /* Inicialmente oculto */

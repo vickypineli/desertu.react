@@ -1,3 +1,4 @@
+import { useInView } from 'react-intersection-observer';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FaStore, FaUsers } from 'react-icons/fa';
@@ -6,11 +7,28 @@ import './InfoSection.css';
 
 
 const InfoSection = () => {
+  // Hook para saber cuándo el contenedor está visible
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Solo se activa una vez cuando el componente está en vista
+    threshold: 0.5, // Solo el 50% del componente necesita estar visible para activar la animación
+  });
+
+  if (inView) {
+    console.log('AboutBox está ahora en vista.');
+  }
+
     return (
-<Container fluid className="info-boxes-section my-5">
+  <Container fluid 
+    ref={ref}
+    className={`info-boxes-section my-5 ${inView ? 'in-view' : ''}`} 
+    >
     <Row className="justify-content-center text-center">
         {/* Primera caja: El Barrio */}
-        <Col md={3} className="info-box ">
+        <Col 
+          md={3} 
+          className={`info-box animate-from-top ${inView ? 'animate-in' : ''}`}
+        >
+          
           <div className="info-icon">
             <FaStore size={100} />
           </div>
@@ -22,7 +40,10 @@ const InfoSection = () => {
         </Col>
 
         {/* Segunda caja: Nuestras Fiestas */}
-        <Col md={3} className="info-box ">
+        <Col 
+          md={3} 
+          className={`info-box animate-from-top ${inView ? 'animate-in' : ''}`}
+          >
           <div className="info-icon">
             <LuPartyPopper  size={100} />
           </div>
@@ -34,7 +55,10 @@ const InfoSection = () => {
         </Col>
 
         {/* Tercera caja: Cómo Nos Organizamos */}
-        <Col md={3} className="info-box ">
+        <Col 
+          md={3} 
+          className={`info-box animate-from-top ${inView ? 'animate-in' : ''}`}
+          >
           <div className="info-icon">
             <FaUsers size={100} />
           </div>
