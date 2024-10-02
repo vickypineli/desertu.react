@@ -1,38 +1,60 @@
 /* src/components/AboutBox.css */
+
 .about-box {
-    background: #f8f9fa; /* Fondo claro */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto de profundidad */
-  }
-  
-  .about-box-image img {
-    border-radius: 8px;
-  }
-  
-  .about-box-content {
-    padding: 20px;
-  }
-  
-  .about-box-content h2 {
-    margin-top: 30px;
-    margin-bottom: -90px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  
-  .about-box-content p {
-    margin-bottom: 20px;
-    text-align: justify;
-    padding: 0 20px;
-    color: #555; /* Color gris para el texto */
-  }
-  
-  .about-box-content .btn-primary {
-    background-color: #0d55a7; /* Personalización del color del botón */
-    border: none;
-  }
-  
-  .about-box-content .btn-primary:hover {
-    background-color: #0a3e7c; /* Color cuando se pasa el ratón por encima */
-  }
-  
+  background: #f8f9fa; /* Fondo claro */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto de profundidad */
+  overflow: hidden;
+}
+
+.about-box-image img {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+}
+
+.about-box-content {
+  padding: 20px;
+}
+
+.about-box-content h2 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about-box-content p {
+  margin-bottom: 20px;
+  text-align: justify;
+  padding: 0 20px;
+  color: #555; /* Color gris para el texto */
+}
+
+.about-box-content .btn-primary {
+  background-color: #0d55a7; 
+  border: none;
+}
+
+.about-box-content .btn-primary:hover {
+  background-color: #fff; 
+  border: 1px solid #0a3e7c;
+  color: #0a3e7c;
+}
+
+/* Animaciones para las columnas */
+.animate-from-left,
+.animate-from-right {
+  opacity: 0; /* Inicialmente oculto */
+  transform: translateX(-50px); /* Posición inicial fuera de vista */
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.animate-from-right {
+  transform: translateX(50px); /* Posición inicial fuera de vista por la derecha */
+}
+
+.animate-in {
+  opacity: 1; /* Hace visible la caja */
+  transform: translateX(0); /* Regresa la caja a su posición normal */
+}

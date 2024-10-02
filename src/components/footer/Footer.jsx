@@ -1,16 +1,12 @@
 // src/components/footer/Footer.jsx
-// import React from 'react';
-import './Footer.css'; // Importa los estilos del componente
+
+import './Footer.css'; 
 
 function Footer() {
   return (
-    <footer className="footer bg-primary">
+    <footer className="footer">
       <div className="container-fluid">
         <div className="row text-center">
-          {/* <div className="col-md-4 text-center text-md-start">
-            <h5>Sobre Nosotros</h5>
-            <p>Información sobre la asociación Desertu Berria y nuestras actividades.</p>
-          </div> */}
           <div className="col-md-6 text-center">
             <h5>Contacto</h5>
             <p>Email: kaixo@desertuberria.com</p>

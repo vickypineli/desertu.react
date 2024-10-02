@@ -31,6 +31,7 @@
   }
   
   .contact-section .btn-primary:hover {
-    background-color: #0b4792; /* Color más oscuro en hover */
+    background-color: #fff; 
+    border: 1px solid #0a3e7c;
+    color: #0a3e7c;
   }
-  
