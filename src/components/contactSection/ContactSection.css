@@ -1,17 +1,18 @@
 /* src/components/ContactSection.css */
 
 .contact-section {
-    background-color: #f8f9fa; /* Color de fondo claro */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para resaltar la sección */
+    background-color: #f8f9fa; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
   }
-  
   .contact-section-image img {
     border-radius: 8px; /* Bordes redondeados para la imagen */
   }
   
   .contact-section-content {
-    text-align: center; /* Alinear el texto a la izquierda */
+    text-align: center;
+    padding: 20px;
   }
   
   .contact-section h2 {
@@ -19,10 +20,14 @@
     margin-bottom: -100px;
     padding: 0 20px;
     font-weight: bold;
+    text-transform: uppercase;
   }
   
   .contact-section p {
     margin-bottom: 20px;
+    text-align: justify;
+    padding: 0 20px;
+    color: #555; 
   }
   
   .contact-section .btn-primary {
@@ -35,3 +40,25 @@
     border: 1px solid #0a3e7c;
     color: #0a3e7c;
   }
+
+  Animaciones para las columnas
+
+.animate-in {
+  opacity: 0; /* Inicialmente oculto */
+  transform: translateX(-50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.animate-from-right {
+  opacity: 0; /* Inicialmente oculto */
+  transform: translateX(-50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.animate-from-right {
+  transform: translateX(50px); /* Posición inicial fuera de vista por la derecha */
+}
+
+.animate-in {
+  opacity: 1; /* Hace visible la caja */
+  transform: translateX(0); /* Regresa la caja a su posición normal */
+}

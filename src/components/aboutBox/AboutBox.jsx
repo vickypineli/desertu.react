@@ -8,7 +8,7 @@ const AboutBox = () => {
   // Hook para saber cuándo el contenedor está visible
   const { ref, inView } = useInView({
     triggerOnce: true, // Solo se activa una vez cuando el componente está en vista
-    threshold: 0.2, // Solo el 20% del componente necesita estar visible para activar la animación
+    threshold: 0.5, // Solo el 50% del componente necesita estar visible para activar la animación
   });
 
   // Log para saber si el contenedor está en vista
@@ -19,7 +19,7 @@ const AboutBox = () => {
   return (
     <Container
       ref={ref}
-      className={`about-box my-5 p-4 ${inView ? 'in-view' : ''}`} // Añadir clase 'in-view' cuando el contenedor es visible
+      className={`about-box my-4 p-4 ${inView ? 'in-view' : ''}`} // Añadir clase 'in-view' cuando el contenedor es visible
     >
       <Row className="align-items-center">
         {/* Caja izquierda: Imagen */}

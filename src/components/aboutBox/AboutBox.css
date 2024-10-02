@@ -1,25 +1,25 @@
 /* src/components/AboutBox.css */
 
 .about-box {
-  background: #f8f9fa; /* Fondo claro */
-  border-radius: 8px;
+  background: #f8f9fa; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto de profundidad */
   overflow: hidden;
 }
 
 .about-box-image img {
   border-radius: 8px;
-  width: 100%;
-  height: auto;
+
 }
 
 .about-box-content {
+  text-align: center;
   padding: 20px;
 }
 
 .about-box-content h2 {
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-bottom: -100px;
+  padding: 0 20px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -28,7 +28,7 @@
   margin-bottom: 20px;
   text-align: justify;
   padding: 0 20px;
-  color: #555; /* Color gris para el texto */
+  color: #555; 
 }
 
 .about-box-content .btn-primary {
@@ -42,12 +42,18 @@
   color: #0a3e7c;
 }
 
-/* Animaciones para las columnas */
-.animate-from-left,
+Animaciones para las columnas
+
 .animate-from-right {
   opacity: 0; /* Inicialmente oculto */
-  transform: translateX(-50px); /* Posición inicial fuera de vista */
-  transition: opacity 1s ease-out, transform 1s ease-out;
+  transform: translateX(-50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.animate-from-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 1s ease, transform 1s ease;
 }
 
 .animate-from-right {
