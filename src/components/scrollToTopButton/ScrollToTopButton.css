@@ -1,8 +1,10 @@
 /* src/components/ScrollToTopButton.css */
+
+/* Estilo base para el botón */
 .scroll-to-top-button {
     position: fixed;
-    bottom: 20px;  /* Distancia desde el borde inferior */
-    right: -100px;   /* Distancia desde el borde derecho */
+    bottom: 20px; /* Distancia desde el borde inferior */
+    right: 20px; /* Posición final dentro de la pantalla */
     background-color: #0d55a7; /* Color del fondo del botón */
     color: white; /* Color del ícono */
     border: none;
@@ -10,24 +12,33 @@
     padding: 15px;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Asegurarse de que esté siempre visible sobre otros elementos */
     transition: transform 0.3s ease-in-out, background-color 0.3s;
-    z-index: 1000; /* Para asegurarse de que esté siempre visible sobre otros elementos */
-    animation: slide-in-animation 0.5s ease forwards; /* Animación de deslizamiento */
-    transition: transform 0.3s ease-in-out, background-color 0.3s;
-}
+  }
+  
+  /* Animación cuando el botón es visible (entra de derecha a izquierda) */
+  .slide-in {
+    animation: slide-in-animation 0.5s ease forwards;
+  }
+  
+  /* Animación cuando el botón desaparece (sale de izquierda a derecha) */
+  .slide-out {
+    animation: slide-out-animation 0.5s ease forwards;
+  }
   
   .scroll-to-top-button:hover {
     background-color: white;
-    border : 2px solid #0d55a7;
-    color: #0d55a7;
-    transform: translateY(-5px);  /* Elevar un poco el botón cuando se pasa el ratón */
+    border: 2px solid #0b4792;
+    color: #0b4792;
+    transform: translateY(-5px); /* Elevar un poco el botón cuando se pasa el ratón */
   }
   
   .scroll-to-top-button svg {
     font-size: 20px; /* Tamaño del ícono de la flecha */
   }
+  
   /* Definir la animación para deslizar el botón desde la derecha */
-@keyframes slide-in-animation {
+  @keyframes slide-in-animation {
     from {
       right: -100px; /* Empieza fuera de la pantalla, hacia la derecha */
     }
@@ -35,3 +46,14 @@
       right: 20px; /* Posición final dentro de la pantalla */
     }
   }
+  
+  /* Definir la animación para deslizar el botón hacia la derecha (salir) */
+  @keyframes slide-out-animation {
+    from {
+      right: 20px; /* Posición dentro de la pantalla */
+    }
+    to {
+      right: -100px; /* Se desliza fuera de la pantalla, hacia la derecha */
+    }
+  }
+  
