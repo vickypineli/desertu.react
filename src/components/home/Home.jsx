@@ -6,6 +6,7 @@ import ContactSection from '../contactSection/ContactSection';
 import './Home.css';
 import InfoSection from '../infoSection/InfoSection';
 import GrowingSection from '../growingSection/GrowingSection';
+import ScrollToTopButton from '../scrollToTopButton/ScrollToTopButton';
 
 
 function Home() {
@@ -16,6 +17,7 @@ function Home() {
       <GrowingSection />
       <InfoSection />
       <ContactSection />
+      <ScrollToTopButton />
     </>
     
   );
