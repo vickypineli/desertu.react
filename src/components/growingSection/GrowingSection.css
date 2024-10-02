@@ -14,12 +14,12 @@
     font-size: 3.5rem;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 60px auto 20px auto;
+    margin: 60px auto -50px auto;
    
   }
   .growing-section p {
     margin-bottom: 20px;
-    padding: 0 20px;
+    padding: 0 40px;
     color: white;
     text-align: justify;
   } 
@@ -43,5 +43,10 @@
     font-size: 6.5rem; /* Tamaño grande para los números */
     font-weight: bold;
     color: rgba(228, 228, 51, 0.856);
+  }
+  @media (max-width: 768px) {
+    .growing-section h2 {
+      font-size: 2.5rem;
+    }
   }
   
