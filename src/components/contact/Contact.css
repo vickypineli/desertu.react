@@ -1,0 +1,45 @@
+/* src/components/contact/Contact.css */
+
+.contact-container {
+    background-color: #f8f9fa; /* Fondo claro */
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  .contact-container h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: -100px;
+    text-transform: uppercase;
+  }
+  .contact-container p {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+
+  .map-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden; /* Evita que los bordes del mapa se desborden */
+  }
+  
+  form {
+    background-color: white; /* Fondo blanco para el formulario */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  form .btn-primary {
+    background-color: #0d55a7;
+    border: none;
+  }
+  
+  form .btn-primary:hover {
+    background-color: #fff; 
+    border: 1px solid #0a3e7c;
+    color: #0a3e7c;
+  }
+  
