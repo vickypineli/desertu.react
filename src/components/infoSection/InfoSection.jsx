@@ -32,9 +32,9 @@ const InfoSection = () => {
           <div className="info-icon">
             <FaStore size={100} />
           </div>
-          <h3>Compra en el Barrio</h3>
+          <h3>Nuestro Barrio</h3>
           <p>Conoce todas las tiendas que hay en el barrio sus horarios, servicios y ubicación.</p>
-          <Link to="/about-barrio">
+          <Link to="/services">
           <button className="btn btn-primary">Leer más</button>
           </Link>
         </Col>
@@ -47,9 +47,9 @@ const InfoSection = () => {
           <div className="info-icon">
             <LuPartyPopper  size={100} />
           </div>
-          <h3>Nuestras Fiestas</h3>
+          <h3>Lo que hacemos</h3>
           <p>Descubre las festividades que organizamos para mantener viva la alegría y la tradición en nuestro barrio.</p>
-          <Link to="/about-fiestas">
+          <Link to="/activities">
             <button className="btn btn-primary">Leer más</button>
           </Link>
         </Col>
@@ -62,9 +62,9 @@ const InfoSection = () => {
           <div className="info-icon">
             <FaUsers size={100} />
           </div>
-          <h3>Cómo Nos Organizamos</h3>
+          <h3>Ultimas noticias</h3>
           <p>Infórmate sobre cómo se estructura nuestra asociación y cómo nos organizamos para mejorar nuestro barrio.</p>
-          <Link to="/about-organizacion">
+          <Link to="/Blog">
           <button className="btn btn-primary">Leer más</button>
           </Link>
         </Col>
