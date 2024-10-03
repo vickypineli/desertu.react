@@ -1,6 +1,6 @@
 // import React from 'react';
 
-function About() {
+function AboutPage() {
   return (
     <div className="container mt-5">
       <h2>Quiénes Somos</h2>
@@ -9,4 +9,4 @@ function About() {
   );
 }
 
-export default About;
+export default AboutPage;

@@ -1,6 +1,6 @@
 // import React from 'react';
 
-function Events() {
+function ActivitiesPage() {
   return (
     <div className="container mt-5">
       <h2>Próximos Eventos</h2>
@@ -13,4 +13,4 @@ function Events() {
   );
 }
 
-export default Events;
+export default ActivitiesPage;

@@ -1,9 +1,9 @@
 // src/components/contact/Contact.jsx
 
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
-import './Contact.css';
+import './ContactPage.css';
 
-function Contact() {
+function ContactPage() {
   return (
     <Container fluid className="contact-container my-5">
       <h2 className="text-center ">Contacto</h2>
@@ -53,6 +53,6 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default ContactPage;
 
 
