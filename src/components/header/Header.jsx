@@ -34,16 +34,19 @@ const Header = () => {
               <Link className="nav-link" to="/about">Sobre Nosotros</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/events">Eventos</Link>
+              <Link className="nav-link" to="/activities">Actividades</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/stores">Tiendas</Link>
+              <Link className="nav-link" to="/services">Servicios</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/blog">Actualidad</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/contact">Contacto</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/documents">Documentos</Link>
+              <Link className="nav-link" to="/register">Participa</Link>
             </li>
           </ul>
         </div>

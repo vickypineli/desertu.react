@@ -1,4 +1,4 @@
-// src/components/stores/StoreCard.jsx
+// src/components/servidesCard/ServidesCard.jsx
 // import React from 'react';
 import PropTypes from 'prop-types'; // Importar PropTypes
 import './StoreCard.css'; // Importar estilos del componente

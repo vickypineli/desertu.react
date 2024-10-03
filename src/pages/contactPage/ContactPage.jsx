@@ -1,4 +1,4 @@
-// src/components/contact/Contact.jsx
+// src/pages/contactPage/ContactPage.jsx
 
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import './ContactPage.css';

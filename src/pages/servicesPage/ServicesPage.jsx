@@ -1,10 +1,10 @@
 // src/components/stores/Stores.jsx
 // import React from 'react';
 import storesData from '../../data/StoresData';
-import StoreCard from './StoreCard'; // Importar el componente StoreCard
-import './Stores.css'; // Importar estilos del componente
+import StoreCard from '../../components/storeCard/StoreCard'; // Importar el componente StoreCard
+import './ServicesPage.css'; // Importar estilos del componente
 
-function Stores() {
+function ServicesPage() {
   return (
     <div className="container-fluid">
       <h2 className="text-center">Tiendas del Barrio</h2>
@@ -19,4 +19,4 @@ function Stores() {
   );
 }
 
-export default Stores;
+export default ServicesPage;

@@ -1,0 +1,46 @@
+/* src/components/NotFound.css */
+
+.not-found-container {
+    padding: 50px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .not-found-image img {
+    border-radius: 8px;
+  }
+  
+  .not-found-content {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .not-found-title {
+    font-size: 100px;
+    font-weight: bold;
+    color: #dc3545; /* Color rojo para el error */
+    margin-bottom: 20px;
+  }
+  
+  .not-found-content h2 {
+    font-size: 36px;
+    margin-top: -10px;
+    color: #333;
+  }
+  
+  .not-found-content p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .not-found-content .btn-primary {
+    background-color: #0d55a7;
+    border: none;
+  }
+  
+  .not-found-content .btn-primary:hover {
+    background-color: #0b4792;
+  }
+  

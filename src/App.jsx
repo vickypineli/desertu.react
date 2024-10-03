@@ -8,8 +8,10 @@ import ActivitiesPage from './pages/activitiesPage/ActivitiesPage';
 import AboutPage from './pages/aboutPage/AboutPage';
 import ContactPage from './pages/contactPage/ContactPage';
 import BlogPage from './pages/blogPage/BlogPage';
+import ServicesPage from './pages/servicesPage/ServicesPage';
+import RegisterPage from './pages/registerPage/RegisterPage';
 
-import Stores from './components/stores/Stores';
+import NotFound from './components/notFound/NotFound';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 
@@ -25,9 +27,10 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/activities" element={<ActivitiesPage />} />
         <Route path="/blog" element={<BlogPage />} />
+        <Route path="/services" element={<ServicesPage />} />
         <Route path="/contact" element={<ContactPage />} />      
-        <Route path="/stores" element={<Stores />} />
-        <Route path="*" element={<Home />} />
+        <Route path="/register" element={<RegisterPage />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </Router>
