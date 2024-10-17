@@ -8,6 +8,7 @@ function ContactPage() {
     <Container fluid className="contact-container my-5">
       <h2 className="text-center ">Contacto</h2>
       <p>Ponte en contacto con nosotras para cualquier consulta o dudas.</p>
+      <p>¡Nos encantaria escuchar tus ideas!</p>
       <Row className="align-items-center">
         {/* Columna izquierda: Mapa */}
         <Col md={6} className="mb-4 mb-md-0">

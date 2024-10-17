@@ -1,8 +1,11 @@
+// src/components/InfoSection.jsx
+
 import { useInView } from 'react-intersection-observer';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FaStore, FaUsers } from 'react-icons/fa';
-import { LuPartyPopper } from "react-icons/lu";
+import { LuPartyPopper } from 'react-icons/lu';
+
 import './InfoSection.css';
 
 
