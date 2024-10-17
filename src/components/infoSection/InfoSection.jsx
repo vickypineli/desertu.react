@@ -28,7 +28,7 @@ const InfoSection = () => {
     <Row className="justify-content-center text-center">
         {/* Primera caja: El Barrio */}
         <Col 
-          md={3} 
+          lg={3} 
           className={`info-box animate-from-top ${inView ? 'animate-in' : ''}`}
         >
           
@@ -44,7 +44,7 @@ const InfoSection = () => {
 
         {/* Segunda caja: Nuestras Fiestas */}
         <Col 
-          md={3} 
+          lg={3} 
           className={`info-box animate-from-top ${inView ? 'animate-in' : ''}`}
           >
           <div className="info-icon">
@@ -59,7 +59,7 @@ const InfoSection = () => {
 
         {/* Tercera caja: Cómo Nos Organizamos */}
         <Col 
-          md={3} 
+          lg={3} 
           className={`info-box animate-from-top ${inView ? 'animate-in' : ''}`}
           >
           <div className="info-icon">

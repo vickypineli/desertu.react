@@ -59,3 +59,8 @@
     transform: translateY(0); /* Regresa la caja a su posición normal */
   }
   
+  @media (min-witch: 768px) and (max-width: 1024px) {
+    .info-box {
+      margin: 10px;
+    }
+  }
