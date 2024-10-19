@@ -1,0 +1,64 @@
+/* Estilos para el fondo semitransparente del modal */
+.modal-overlay {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100vw; 
+  height: 100vh; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1.5s ease, visibility 1.5s ease; /* Transición para la visibilidad y el desvanecimiento */
+}
+
+/* Cuando el modal está activo */
+.modal-overlay.show {
+  opacity: 1; /* Aparece */
+  visibility: visible; /* Se hace visible */
+}
+
+/* Contenedor del modal */
+.modal-container {
+  background: white;
+  padding: 20px; 
+  border-radius: 8px; 
+  max-width: 800px;
+  position: relative; 
+  transform: translateY(50px); 
+  opacity: 0; 
+  transition: transform 0.5s ease-out, opacity 5.5s ease-out; /* Transiciones de desplazamiento y desvanecimiento */
+}
+
+/* Cuando el modal está activo */
+.modal-overlay.show .modal-container {
+  transform: translateY(0); /* Corregido: 'TranslateY' a 'translateY' */
+  opacity: 1; /* Aparece */
+}
+
+/* Contenido del modal */
+.modal-content {
+  padding: 20px;
+  border-radius: 8px; /* Corregido: 'radio del borde' a 'border-radius' */
+  width: 80%; /* Corregido: 'ancho' a 'width' */
+}
+
+/* Estilos del encabezado del modal */
+.modal-header {
+  display: flex;
+  justify-content: flex-end; /* Corregido: 'justificar contenido' a 'justify-content' */
+  align-items: center; /* Corregido: 'alinear elementos' a 'align-items' */
+}
+
+/* Botón de cerrar el modal */
+.modal-close-button {
+  padding: 10px;
+  background: none; 
+  border: none; 
+  font-size: 35px; 
+  cursor: pointer; 
+  color: #555;
+}
+
