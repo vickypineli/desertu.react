@@ -4,7 +4,7 @@ import { Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './InfoSection.css'; // Añade aquí los estilos específicos para este componente
 
-const InfoBox = ({ icon, title, text, link, buttonText, showButton }) => {
+const InfoCardIcon = ({ icon, title, text, link, buttonText, showButton }) => {
   return (
     <Col md={3} className="info-box animate-from-top">
       <div className="info-icon">
@@ -22,7 +22,7 @@ const InfoBox = ({ icon, title, text, link, buttonText, showButton }) => {
 };
 
 // Validación de PropTypes para InfoBox
-InfoBox.propTypes = {
+InfoCardIcon.propTypes = {
   icon: PropTypes.node.isRequired, // Icono puede ser un componente JSX
   title: PropTypes.string.isRequired, // Título debe ser una cadena
   text: PropTypes.string.isRequired, // Texto debe ser una cadena
@@ -31,4 +31,4 @@ InfoBox.propTypes = {
   showButton: PropTypes.bool, // Booleano que indica si el botón se debe mostrar
 };
 
-export default InfoBox;
+export default InfoCardIcon;

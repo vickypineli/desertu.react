@@ -68,12 +68,12 @@ const AboutPage = () => {
         {/* Segunda caja: Desertu Batzordea */}
         <Col xs={12} md={3} lg={3} className={`organization-box animate-from-top ${inView ? 'animate-in' : ''}`}>
           <div className="organization-img">
-            <img src="/assets/naguzi-batzorde.jpg" alt="Desertu Batzordea" />
+            <img src="/assets/naguzi-batzorde.jpg" alt="Desertu Berria" />
           </div>
-          <h3>Desertu Batzordea</h3>
+          <h3>Desertu Berria</h3>
           <button
             className="btn btn-primary"
-            onClick={() => handleOpenModal('Desertu Batzordea', 'Este equipo organiza eventos y actividades comunitarias dentro del barrio Desertu.')}
+            onClick={() => handleOpenModal('Desertu Berria', 'Este equipo organiza eventos y actividades comunitarias dentro del barrio Desertu.')}
           >
             Leer más
           </button>

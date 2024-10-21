@@ -1,0 +1,76 @@
+/* Aseguramos que el componente ocupe todo el ancho disponible */
+.row {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
+  
+  /* Clase para invertir el orden de las columnas (imagen a la derecha, texto a la izquierda) */
+  .flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+  
+  /* Ajustamos las imágenes para que mantengan su proporción */
+  .info-card-image img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+  }
+  
+  /* Animaciones para las imágenes y el texto */
+  .animate-from-left {
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 0.7s ease-out;
+  }
+  
+  .animate-from-right {
+    transform: translateX(50%);
+    opacity: 0;
+    transition: all 0.7s ease-out;
+  }
+  
+  .animate-in {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  /* Estilos del texto */
+  .info-card-text {
+    text-align: left;
+    padding: 20px;
+    color: #333;
+  }
+  
+  .info-card-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .info-card-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  /* Responsive behavior: Ajustar columnas en pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .info-card-image,
+    .info-card-text {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .info-card-text h2 {
+      font-size: 1.5rem;
+    }
+  
+    /* Para pantallas móviles, flex-direction siempre será column-reverse */
+    .flex-row-reverse {
+      flex-direction: column-reverse;
+    }
+  }
+  
